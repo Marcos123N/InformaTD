@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnología Avanzada</title>
+  <style>
+  
+    /* Estilos para el menú en columnas */
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    nav ul li {
+      flex-basis: 40%; /* Ajusta el ancho de las columnas según sea necesario */
+    }
+    
+    .position {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .slider {
+      background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjid3ruuEk3IzMaOG2EMBnbnFczu-GZIKJHOeZ0sdxpmbAQbfWk1OJK7cDj-7ca5MBNz0kF3Dkng49L5Hoviqz-ppqI-8zp2HJlJnRdBLkB2jMSHaKeTtMmx337rLGO5DAHybXbIC_ITdRX-3YE52aH8puFpgmh-W22W0Zi5Qs_xo-5XG947VKJguhq/s320/440px-Albert_Einstein_Head~2.jpg');
+      background-size: cover;
+      height: 260px;
+      width: 300px;
+      border-radius: 10px;
+      animation: animate 15s infinite;
+    }
+    
+    @keyframes animate {
+      33% {
+        background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjgFloEtAeQtbIkY8jMATlqPsVlNaMaXHonEmi578pX1477bTdQ8iwRdy8aTFTb_BBirU9TKLzQawKaJ4AoRUh963V-OhXLgXpnjXt_lQre_PVcqmsF-vqrWJEvf9mYs0F_z7zplpl7B68MYhhgh1R9pVHvXEvOKx6qxzNbBFlWcKeislJqwpoI16D/s320/einstein_1947.jpg');
+        background-size: cover;
+        
+      }
+      66% {
+        background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTHrbI8Aq27FrhPApC4kYZfKJxpldAFfx7HNSoPGpnfVxp2-bQODL4Xgra6YFBwLIkg0DA8ALoXNDhEFpFaIbaPTGdqZsOxRlLoXDoiCRU3-RYK0-8Snu_E1xilF5CyCgMgYh7CyMZjn6TWR900oQkYQmRHqiRbSi7N01NW56uTwYB9op-unvoVSfW/s320/Real-Albert-Einstein-PNG.png');
+        background-size: cover;
+      }
+      
+      100% {
+        background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjid3ruuEk3IzMaOG2EMBnbnFczu-GZIKJHOeZ0sdxpmbAQbfWk1OJK7cDj-7ca5MBNz0kF3Dkng49L5Hoviqz-ppqI-8zp2HJlJnRdBLkB2jMSHaKeTtMmx337rLGO5DAHybXbIC_ITdRX-3YE52aH8puFpgmh-W22W0Zi5Qs_xo-5XG947VKJguhq/s320/440px-Albert_Einstein_Head~2.jpg');
+        background-size: cover;
+      }
+    }
+
+      .container {
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      h1 {
+        color: #ffffff;
+        font-size: 52px;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        animation: neon-glow 1.5s ease-in-out infinite alternate;
+      }
+      
+      .p:1 {
+        text-align: center;
+      }
+
+      .centered-image {
+        border: 5px solid #00ffff;
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .text-container {
+        margin-top: 20px;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .animated-text {
+        animation: show-text 3s linear infinite;
+      }
+
+      @keyframes show-text {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes neon-glow {
+        rom {
+          text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff ;
+        }
+        to {
+          text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff ;
+        }
+      }
+      .h2 {
+        text-align: center;
+        height: 50px;
+        width: 50px;
+      }
+        .logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+    }
+
+    .head {
+      width: 80px;
+      height: 80px;
+      background-color: #2c3e50;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .eye {
+      width: 20px;
+      height: 20px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .eye:nth-child(1) {
+      left: 10px;
+    }
+
+    .eye:nth-child(2) {
+      right: 10px;
+    }
+
+    .body {
+      width: 80px;
+      height: 120px;
+      background-color: #2c3e50;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .arms {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 10px;
+    }
+
+    .arm {
+      width: 20px;
+      height: 60px;
+      background-color: #2c3e50;
+      border-radius: 10px;
+    }
+
+    .legs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .leg {
+      width: 20px;
+      height: 60px;
+      background-color: #2c3e50;
+      border-radius: 10px;
+      margin: 0 5px;
+    }
+  
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    /* Estilos para el encabezado */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    /* Estilos para la barra de navegación */
+    nav {
+      background-color: #444;
+      color: #fff;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ff6f00;
+    }
+
+    /* Estilos para la sección principal */
+    main {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 20px 0;
+      color: #333;
+      position: relative;
+    }
+
+    h2:before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background-color: #ff6f00;
+      transition: width 0.3s ease;
+    }
+
+    h2:hover:before {
+      width: 100%;
+    }
+
+    p {
+      line-height: 1.5;
+      color: #666;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    /* Estilos para el pie de página */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  
+  </style>
+</head>
+<body>
+  <script>
+  // Obtener el botón de regreso al principio
+  var backButton = document.createElement("button");
+  backButton.innerText = "Inicio";
+  backButton.style.position = "fixed";
+  backButton.style.bottom = "70px";
+  backButton.style.right = "20px";
+  backButton.style.padding = "10px";
+  backButton.style.backgroundColor = "#ff6f00";
+  backButton.style.color = "#fff";
+  backButton.style.border = "none";
+  backButton.style.borderRadius = "4px";
+  backButton.style.cursor = "pointer";
+  backButton.style.display = "none"; // Ocultar el botón inicialmente
+
+  // Mostrar u ocultar el botón dependiendo de la posición del usuario en la página
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+      backButton.style.display = "block";
+    } else {
+      backButton.style.display = "none";
+    }
+  });
+
+  // Regresar al principio cuando se hace clic en el botón
+  backButton.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  // Agregar el botón al cuerpo del documento
+  document.body.appendChild(backButton);
+</script>
+ <header>
+    <h1>científicos Famosos</h1>
+  </header>
+
+
+
+
+  <main>
+    <h2 id="científico_1">Albert Einstein, Alemania </h2><br /><br />
+    <!--imagen tealcionada con el texto de la página -->
+    
+<a href=""><div class="slider-container">
+  <div class="slider position"></div>
+</div></a><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <!-- Contenido de la sección de inicio -->
+    <p>Albert Einstein fue un físico teórico alemán que nació el 14 de marzo de 1879 en Ulm, en el Reino de Wurtemberg del Imperio Alemán, y falleció el 18 de abril de 1955 en Princeton, Nueva Jersey, Estados Unidos. Es considerado uno de los científicos más influyentes y reconocidos del siglo XX.<br /><br />
+
+Einstein mostró desde temprana edad una gran curiosidad por la ciencia y las matemáticas. Aunque inicialmente tuvo dificultades en la escuela, se destacó por su capacidad para la autodidacta y su imaginación. En 1905, a la edad de 26 años, publicó cuatro artículos científicos revolucionarios en la revista Annalen der Physik, que sentaron las bases de la física moderna y le valieron reconocimiento internacional. Estos trabajos incluyeron la teoría de la relatividad especial, que transformó nuestra comprensión del tiempo, el espacio, la materia y la energía, y la famosa ecuación E=mc², que describe la equivalencia masa-energía.<br /><br />
+
+En 1915, Einstein presentó la teoría de la relatividad general, una ampliación de la relatividad especial que incluía la gravedad. Esta teoría propuso que la presencia de masa y energía curva el espacio-tiempo, lo que a su vez afecta el movimiento de los objetos en el universo. La teoría de la relatividad general fue confirmada por observaciones y experimentos, y sigue siendo la base de la física gravitacional en la actualidad.<br /><br />
+
+Durante la década de 1920, Einstein se convirtió en una figura pública destacada y en un defensor de causas humanitarias y pacifistas. En 1921, fue galardonado con el Premio Nobel de Física por su explicación del efecto fotoeléctrico, que demostró la naturaleza cuántica de la luz. Sin embargo, a lo largo de su carrera, Einstein también se involucró en debates científicos y filosóficos, especialmente en relación con la teoría cuántica, expresando escepticismo hacia algunos de sus principios fundamentales.<br /><br />
+
+Debido a la persecución nazi en Alemania, Einstein emigró a los Estados Unidos en 1933 y se estableció en la Universidad de Princeton, donde continuó su trabajo científico y enseñó. Durante la Segunda Guerra Mundial, escribió una carta al presidente Franklin D. Roosevelt advirtiéndole sobre la posibilidad de desarrollar armas nucleares por parte de los alemanes, lo que llevó al establecimiento del Proyecto Manhattan y al desarrollo de la bomba atómica en los Estados Unidos.<br /><br />
+
+Después de la guerra, Einstein se dedicó a promover la paz, el desarme nuclear y la cooperación internacional. Realizó numerosos viajes y conferencias, y fue reconocido como una voz destacada en la lucha contra las armas nucleares. A pesar de su fama y logros científicos, Einstein era conocido por su humildad y su perspectiva humanista.<br /><br />
+
+Albert Einstein dejó un legado duradero en la física y la ciencia en general. Su trabajo transformó nuestra comprensión del universo y tuvo un impacto significativo en el desarrollo de tecnologías como la energía nuclear y los avances en la física de partículas. Sus teorías continúan siendo fundamentales en la investigación científica y su influencia se extiende a campos como la cosmología, la astrofísica y la teoría cuántica.<br /><br />
+
+Además de su legado científico, Einstein también dejó un impacto en la cultura popular. Su imagen icónica con su distintivo peinado desordenado y su bigote se ha convertido en un símbolo de genialidad. Sus citas y pensamientos filosóficos, como "La imaginación es más importante que el conocimiento" y "La vida es como montar en bicicleta, para mantener el equilibrio debes seguir adelante", son ampliamente citados y siguen inspirando a personas de todo el mundo.<br /><br />
+
+Albert Einstein fue un científico excepcional cuyo trabajo y legado continúan siendo celebrados y estudiados en la actualidad. Su genialidad, curiosidad y dedicación a la ciencia han dejado una marca indeleble en la historia de la humanidad.</p><hr />
+
+    <h2 id="científico_2">Aristóteles, Mecadonia</h2>
+    <!--imagen del texto de la robótica de la página web -->
+    <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOoMq44EbfWVDDFOIxHnPxf3OAaYQIYvU3ieXWHQ7FlYcGvYn2jN01JPC-GOXJ2TQ7HiVCyBI72hCGRymqGlu9QX4L-7RLWXTdr0DOS8qzesqghHITENudA95lNeLlgjG_0_9pxlroT5sfNDvIy9DFIV6-IUIHp3OHUT18b6Q9DxiedF0KFDakq9X3/s320/440px-Aristotle_Altemps_Inv8575.jpg"></a>
+
+    <!-- Contenido de la sección de robótica -->
+    <p>
+      Aristóteles fue un filósofo, científico y pensador griego nacido en el año 384 a.C. en la ciudad de Estagira, que en aquel entonces formaba parte del Reino de Macedonia. Es considerado uno de los pensadores más influyentes de la historia y uno de los grandes exponentes de la filosofía griega clásica, junto con Sócrates y Platón.<br /><br />
+
+Aristóteles comenzó su educación en su ciudad natal y más tarde se trasladó a Atenas, donde estudió en la Academia de Platón durante unos veinte años. Durante este tiempo, desarrolló una estrecha relación con su maestro, pero también comenzó a diferenciarse de él en varios aspectos filosóficos. Aunque Platón enfatizaba las ideas y el mundo de las formas, Aristóteles se centraba más en el mundo empírico y en el estudio de la naturaleza.<br /><br />
+
+Después de la muerte de Platón, Aristóteles dejó la Academia y pasó un tiempo viajando por diferentes partes de Grecia y Asia Menor, llevando a cabo investigaciones científicas y recopilando información sobre una amplia variedad de temas. Finalmente, en el año 335 a.C., fundó su propia escuela filosófica, el Liceo, en Atenas. En el Liceo, Aristóteles enseñó y discutió sobre una amplia gama de temas, incluyendo filosofía, ciencia, lógica, ética, política y retórica.<br /><br />
+
+Aristóteles fue un prolífico escritor y se cree que ha escrito más de 200 tratados, de los cuales solo una parte ha llegado hasta nuestros días. Sus obras cubren una amplia gama de temas, desde la metafísica y la ética, hasta la biología, la física y la política. Sus escritos tuvieron un gran impacto en el desarrollo de la ciencia y la filosofía occidental, y muchas de sus ideas y conceptos siguen siendo estudiados y debatidos en la actualidad.<br /><br />
+
+Aristóteles también fue tutor del joven príncipe macedonio Alejandro Magno, quien más tarde se convertiría en uno de los conquistadores más destacados de la historia. La influencia de Aristóteles en la educación de Alejandro y su énfasis en la razón y la ética han dejado una marca duradera en la educación y el pensamiento del famoso líder.<br /><br />
+
+Aristóteles falleció en el año 322 a.C. en Calcis, en la isla de Eubea. Aunque su influencia se vio eclipsada durante la Edad Media, sus ideas y su enfoque racional siguen siendo fundamentales para la filosofía y la ciencia modernas. Su legado perdura a través de sus obras y su impacto en el pensamiento humano, y su figura es venerada como uno de los grandes pensadores de la historia.
+    </p><hr />
+
+    <h2 id="científico_3">Isaac Newton, Inglaterra </h2>
+    <!--imagen de la inteligencia artificial de la página web -->
+    <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjY8yU75Yr49LxzqoI6ZqT5X3xAmebmoR6ADWwwn5crZwbDmrIfjdrIIOk_ey37v-rhdpofyTr8IYCI3mSt4XzbSrPGI_io8Up3MfoT_0gSIa63B1_hgjgDeWWhYAJTGi2OClW7BNoV7P0PJxQ1SWW7AJQT0MfHTZSI5txiG2BFLBMBDN2bdbfIrQH1/s320/440px-Portrait_of_Sir_Isaac_Newton,_1689_(brightened).jpg"></a>
+
+    
+    <!-- Contenido de la sección de inteligencia artificial -->
+
+    <p>Isaac Newton, nacido el 25 de diciembre de 1642 en Woolsthorpe, Lincolnshire, Inglaterra, fue uno de los científicos más influyentes de la historia. Sus contribuciones en los campos de la física, las matemáticas y la astronomía sentaron las bases de la revolución científica.<br /><br />
+
+En su juventud, Newton mostró habilidades destacadas en matemáticas y construyó sus propias herramientas científicas. En 1661, ingresó en el Trinity College de la Universidad de Cambridge, donde estudió matemáticas y filosofía natural. Durante su tiempo en la universidad, comenzó a desarrollar sus teorías sobre cálculo, óptica y las leyes del movimiento.<br /><br />
+
+En 1665, la Universidad de Cambridge cerró debido a la epidemia de peste bubónica, y Newton regresó a su hogar en Woolsthorpe. Durante este tiempo, llevó a cabo importantes investigaciones en matemáticas y física, incluyendo sus trabajos sobre la ley de la gravitación universal y la teoría de la luz y el color.<br /><br />
+
+En 1687, Newton publicó su obra maestra, "Philosophiæ Naturalis Principia Mathematica" (Principios matemáticos de la filosofía natural), donde estableció las leyes del movimiento y la ley de la gravitación universal. Estas leyes revolucionaron la física y proporcionaron una nueva comprensión del mundo natural.<br /><br />
+
+Newton también hizo contribuciones significativas en el campo de la óptica. Demostró que la luz blanca está compuesta por colores individuales y desarrolló el primer telescopio reflector, conocido como el telescopio newtoniano.<br /><br />
+
+Además de sus logros científicos, Newton también fue un destacado funcionario público. Fue elegido miembro del Parlamento en 1689 y más tarde se convirtió en el director de la Casa de la Moneda de Inglaterra. Durante su mandato, reformó la moneda y persiguió a los falsificadores con éxito.<br /><br />
+
+Isaac Newton falleció el 20 de marzo de 1727 en Londres, dejando un legado duradero en el campo de la ciencia. Sus descubrimientos y teorías sentaron las bases de la física moderna y su enfoque científico riguroso influyó en generaciones posteriores de científicos. Newton es ampliamente reconocido como una de las mentes más brillantes de la historia y su trabajo continúa siendo estudiado y admirado en la actualidad.</p>
+    <hr />
+    <h2 id="científica_4">Marie Curie, Versovia, Polonia</h2>
+    <!--imagen de nanotecnología de la página web -->
+    <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTGnenExdbDqfnQ1DC5JFiD7GwpEmDtBFJ9AJ3GRZlEO55PVym0wv0J8a_OYPzyq2QQ_fzgTXtS2o7rLj-NPUpSJhDTocTPafanjeC1RkNET6ZntnpMemV5jXVBLCrc_FQyWGBmwtt_mJVYNsWk3L1rP5jJnDele4bnRUQR-Z-fiHaaz-p8v6bvGaG/s320/marie_curie_color.jpg"></a>
+
+     <!-- contenido de la nano tecnología-->
+     <p>Marie Curie, cuyo nombre de soltera era Maria Salomea Sklodowska, fue una destacada científica polaca-francesa nacida el 7 de noviembre de 1867 en Varsovia, Polonia, y fallecida el 4 de julio de 1934 en Sallanches, Francia. Es ampliamente reconocida por sus contribuciones pioneras en el campo de la radioactividad y por convertirse en la primera mujer en recibir un Premio Nobel y la única persona en ganar Nobel en dos disciplinas diferentes.<br /><br />
+
+Marie Curie comenzó su carrera científica en la Universidad de Varsovia, pero debido a la falta de oportunidades para las mujeres en Polonia, se trasladó a París en 1891 para continuar sus estudios en la Sorbona. Allí conoció a su esposo Pierre Curie, con quien colaboró estrechamente en sus investigaciones.<br /><br />
+En 1898, Marie y Pierre Curie aislaron un nuevo elemento químico altamente radiactivo al que llamaron polonio, en honor a Polonia, y poco después descubrieron el radio. Estos descubrimientos revolucionaron la ciencia y sentaron las bases de la física moderna. Por sus logros, la pareja recibió conjuntamente el Premio Nobel de Física en 1903.<br /><br />
+
+Tras la muerte de Pierre Curie en 1906, Marie continuó con su trabajo y se convirtió en la primera mujer en impartir clases en la Sorbona. En 1911, recibió el Premio Nobel de Química por sus investigaciones sobre los compuestos de radio. Este segundo Nobel la convirtió en la primera persona en ganar dos premios Nobel y hasta ahora sigue siendo la única mujer en lograrlo en dos disciplinas diferentes.<br /><br />
+
+A lo largo de su carrera, Marie Curie se enfrentó a numerosos desafíos y prejuicios de la época debido a su género, pero su dedicación y pasión por la ciencia superaron todas las barreras. Durante la Primera Guerra Mundial, trabajó en el desarrollo de unidades móviles de rayos X para ayudar en el diagnóstico y tratamiento de soldados heridos.<br /><br />
+
+Sin embargo, la exposición constante a la radiación tuvo graves consecuencias para su salud, y finalmente, en 1934, Marie Curie falleció debido a la leucemia causada por su trabajo con materiales radioactivos. A pesar de su prematura muerte, su legado perdura como una de las científicas más influyentes de la historia, cuyos descubrimientos han tenido un impacto duradero en el campo de la radiología y la física nuclear.</p>
+<h2 id="científico_5">Galileo Galilei, Italia </h2>
+
+<a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8gXK72OYFVKNpIjcMb-KWp1OY0uimgHHOiq34QUJ16kz0SGF2XDprcEjHdFdvX0cxx8EEHbQrPbFL6jDq-uhMI4tj4QdKJFJNwl65iPDWWBHwr8a3Eh7O5ypIDCfJzx9Hmn5kDRel0KLqqNzdQ1euyKrZsurZFxsJ9RP5hARJqA7opraiRWWxfz_M/s320/440px-Justus_Sustermans_-_Portrait_of_Galileo_Galilei,_1636.jpg"/></a>
+<p>Galileo Galilei fue un destacado científico, matemático, físico y astrónomo italiano del siglo XVI y XVII. Nació el 15 de febrero de 1564 en Pisa, Italia, en el seno de una familia de clase media. Desde joven mostró habilidades excepcionales en matemáticas y comenzó a estudiar medicina en la Universidad de Pisa, aunque pronto se sintió atraído por la física y las ciencias naturales.<br /><br />
+
+En sus primeros años, Galileo se interesó por el movimiento y la mecánica, y realizó importantes descubrimientos relacionados con la caída de los objetos y el péndulo. Estas investigaciones le llevaron a formular las leyes del movimiento que sentarían las bases de la física moderna.<br /><br />
+
+En 1609, Galileo construyó su propio telescopio y comenzó a realizar observaciones astronómicas revolucionarias. Descubrió las montañas y cráteres de la Luna, las fases de Venus y las lunas de Júpiter, lo que confirmó la teoría heliocéntrica de Copérnico y contradecía la visión geocéntrica del universo respaldada por la Iglesia Católica en aquel entonces.<br /><br />
+
+Estos descubrimientos y sus publicaciones posteriores le ganaron reconocimiento y fama, pero también le valieron conflictos con la Iglesia y la Inquisición. Galileo defendió el sistema copernicano y se enfrentó a las doctrinas religiosas que sostenían que la Tierra era el centro del universo. En 1633, fue llamado a comparecer ante la Inquisición y se le acusó de herejía. Tras un juicio, fue condenado y se le ordenó abjurar de sus ideas heliocéntricas. Pasó el resto de su vida bajo arresto domiciliario en Florencia.<br /><br />
+
+A pesar de las dificultades, Galileo continuó trabajando en sus investigaciones y escribiendo. Publicó su obra más famosa, "Diálogo sobre los dos máximos sistemas del mundo", en 1632, donde presentaba argumentos a favor del heliocentrismo. Su obra fue prohibida por la Iglesia Católica, pero tuvo un impacto duradero en el desarrollo de la ciencia y el pensamiento científico.<br /><br />
+
+Galileo Galilei falleció el 8 de enero de 1642 en Arcetri, cerca de Florencia, Italia. Su legado perdura como uno de los científicos más importantes de la historia, cuyas contribuciones sentaron las bases de la ciencia moderna y cuestionaron las creencias establecidas de su tiempo. Su valentía y perseverancia en la defensa de sus ideas lo convierten en un símbolo de la lucha por la libertad de pensamiento y el avance del conocimiento científico.</p>
+
+<h2 id="científico_6">Charles Robert, Inglaterra</h2>
+ <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNc58lMCJAjCa91SLbyCd8irWLEzZMYQlBJvgSSdDYNL1DNRIS_nk5Y4PE5fitpvVJSrK0Ss1mMmG9JeyXZm5kd9V5lPW7L9_xDqzPCj86LMU069Sw6N0fX0-hfzAet5Wd5cTszd5lTYfoTkAqewVCCPnTXYTyop6vXSn5NjTgpsgowOZjupfHYU5X/s320/440px-Charles_Darwin_portrait.jpg"/></a>
+ <p>Charles Robert Darwin fue un destacado naturalista y científico inglés nacido el 12 de febrero de 1809 en Shrewsbury, Inglaterra. Es reconocido principalmente por su teoría de la evolución a través de la selección natural, la cual revolucionó la forma en que entendemos la vida en la Tierra.<br /><br />
+
+Darwin provino de una familia de médicos y se esperaba que siguiera esa profesión. Sin embargo, su verdadera pasión era la historia natural. Estudió medicina en la Universidad de Edimburgo, pero pronto abandonó la carrera para dedicarse a la biología y la geología. Su interés por la naturaleza lo llevó a embarcarse en un viaje alrededor del mundo en el HMS Beagle en 1831.<br /><br />
+
+Durante los cinco años que duró el viaje, Darwin recorrió diversos continentes y recolectó una gran cantidad de especímenes y observaciones. Fue en estas expediciones donde comenzó a desarrollar sus ideas sobre la evolución de las especies. Observó variaciones en las características de las plantas y los animales en diferentes regiones, y se dio cuenta de que estas variaciones estaban relacionadas con la adaptación al entorno.<br /><br />
+
+A su regreso a Inglaterra, Darwin comenzó a analizar y sintetizar sus observaciones. Publicó sus ideas en su obra más famosa, "El origen de las especies", en 1859. En este libro, Darwin presentó la teoría de la evolución a través de la selección natural, argumentando que las especies evolucionan a lo largo del tiempo a través de la competencia por los recursos y la supervivencia de los más aptos.<br /><br />
+
+La teoría de Darwin fue revolucionaria y generó un gran debate en la comunidad científica y religiosa de la época. Sin embargo, con el tiempo, su trabajo fue ampliamente aceptado y se convirtió en la base de la biología moderna.<br /><br />
+
+Además de su trabajo en la teoría de la evolución, Darwin realizó importantes contribuciones en otros campos de la biología. Estudió la reproducción de las plantas, la expresión de las emociones en los animales y los efectos de la domesticación en las especies.<br /><br />
+
+Charles Darwin falleció el 19 de abril de 1882 en Downe, Kent, Inglaterra, dejando un legado científico duradero. Su trabajo ha tenido un impacto significativo en nuestra comprensión de la diversidad y el origen de la vida en la Tierra, y su legado perdura hasta el día de hoy.</p>
+<h2 id="científica_7">Rosalind Elsie Franklin, Londres, Reino Unido</h2>
+<a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisuWLd9-4Xxdayq5V4go8lhySZ9bCOLVuRuHnritveccSI5XkaZ4OkUX7TjGfjfHKHwja97Ks0LnwYK_1sEk9UKVuWZBRdgh2FHtMzkcVF2NTSmq_XQzc9bTydDcWIV1E-MTzjkrKOWtEZQdbR8oeQ-vpwawyeBl_M36M9yD1Vw7DcQ_RMsM2nGsHY/s320/440px-Rosalind_Franklin.jpg"/></a>
+<p>Rosalind Elsie Franklin fue una destacada científica británica que nació el 25 de julio de 1920 en Londres, Inglaterra, y falleció el 16 de abril de 1958 a la temprana edad de 37 años. Franklin hizo importantes contribuciones al campo de la biología molecular y es reconocida por su papel crucial en la elucidación de la estructura del ADN.<br /><br />
+
+Franklin comenzó sus estudios en la Universidad de Cambridge, donde se destacó en física y química. Posteriormente, obtuvo su doctorado en química física en la Universidad de Cambridge en 1945. Luego de completar su doctorado, trabajó como investigadora en diferentes instituciones científicas en Francia y Reino Unido.<br /><br />
+
+En 1951, Franklin se unió al King's College de Londres como investigadora asociada. Allí, utilizando la técnica de difracción de rayos X, comenzó a investigar la estructura del ADN. Sus imágenes de difracción de alta calidad permitieron deducir que el ADN tenía una estructura de doble hélice, con la información genética codificada en su interior.<br /><br />
+
+Sin embargo, en un giro desafortunado, las imágenes de difracción de Franklin fueron mostradas sin su conocimiento ni consentimiento a James Watson y Francis Crick, quienes también estaban investigando la estructura del ADN en la Universidad de Cambridge. A partir de esas imágenes y otros datos, Watson y Crick propusieron su famoso modelo de la doble hélice del ADN en 1953, por el cual recibieron el Premio Nobel de Fisiología o Medicina en 1962.<br /><br />
+
+A pesar de su contribución fundamental a la comprensión de la estructura del ADN, Franklin no fue reconocida en su momento. Además, sufrió discriminación de género en el ámbito científico, enfrentando obstáculos y desafíos en su carrera. Tras su trabajo en el King's College, Franklin continuó investigando la estructura del virus del mosaico del tabaco en el laboratorio Birbeck de la Universidad de Londres.<br /><br />
+
+Trágicamente, Rosalind Franklin falleció a causa de un cáncer de ovario en 1958, a la edad de 37 años. A pesar de su corta vida, su contribución científica fue fundamental para comprender la estructura del ADN y sentó las bases para importantes avances en la biología molecular. Con el tiempo, su trabajo ha sido reconocido y se le ha rendido homenaje por su destacado papel en la historia de la ciencia.</p>
+<h2 id="científico_8">Gregor Johann Mendel, República Checa</h2>
+<a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFOWKhFHjiOASteZbduRybJ30Z3QpFO9y8edskP7Pu_7rAyQZfdf6fsY766NivF3xr5hvw2t2acD4NWoZYZ4xkJSMu5qB32u3ynOWSLAqCj-YWr1oqHuxRnPLDDEerp3Jdy-hQTf3qDFUSkRidV4-vCqfkfGT9iXcXJjmejuCx_3MvMjNzvp6HztNn/s1600/Gregor_Mendel.png"/></a>
+<p>Gregor Johann Mendel fue un monje agustino y científico austriaco nacido el 20 de julio de 1822 en el Imperio Austriaco (hoy en día República Checa) y fallecido el 6 de enero de 1884 en Brno, también en el territorio que actualmente corresponde a la República Checa. Mendel es conocido como el padre de la genética moderna debido a sus innovadores experimentos con guisantes, los cuales le permitieron establecer las leyes fundamentales de la herencia.<br /><br />
+
+Mendel ingresó a la Orden de los Agustinos en el monasterio de San Tomás en Brno, donde desarrolló gran parte de su trabajo científico. Durante su tiempo en el monasterio, Mendel llevó a cabo una serie de experimentos meticulosos con plantas de guisantes comunes, estudiando cómo se transmitían características específicas de una generación a otra.<br /><br />
+
+A través de sus experimentos, Mendel formuló las leyes de la herencia, que hoy en día son conocidas como las Leyes de Mendel. Estas leyes establecen conceptos fundamentales como la segregación de los alelos, la dominancia y la recesividad de los rasgos hereditarios, y la independencia de la herencia de diferentes características.<br /><br />
+
+A pesar de la importancia de su trabajo, las investigaciones de Mendel no fueron ampliamente reconocidas en su época. Sus descubrimientos permanecieron en gran parte desconocidos hasta que fueron redescubiertos y reconocidos por la comunidad científica en el siglo XX, sentando las bases de la genética moderna.<br /><br />
+
+El legado de Mendel ha sido de gran influencia en el campo de la biología y la genética. Sus investigaciones y descubrimientos proporcionaron una comprensión fundamental de cómo se transmiten los rasgos hereditarios y sentaron las bases para el posterior desarrollo de la genética molecular. <br /><br />
+
+Gregor Johann Mendel falleció en Brno el 6 de enero de 1884, sin haber sido plenamente reconocido por sus logros durante su vida. Sin embargo, su trabajo revolucionario en el estudio de la herencia ha dejado un legado duradero y continúa siendo una piedra angular de la biología moderna.</p>
+<h2 id="científico_9">Louis Pasteur, Francia</h2>
+<a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-HTAFUxvA2d0g0QRS0bPg8qs5JqUOZpVTIIyjRgVcsm1Ea3-AQ3YNwN3_xL5QycBhmd-p4AcKZjyXdcpOsszWDQQeZPNwa-vMgbeyFyxo7V9F_pLVbzWrkDO5ODPtcZgsQVtGOHDzXlqzc3ZZ4JUPdB40tO4XsdkXiFDbB7_4TOTK6Jju_YX70alx/s320/440px-Louis_Pasteur.jpg"/></a>
+<p>Louis Pasteur fue un científico francés que nació el 27 de diciembre de 1822 en Dole, Francia, y falleció el 28 de septiembre de 1895 en Marnes-la-Coquette, Francia. Es reconocido como uno de los pioneros de la microbiología y la medicina moderna debido a sus contribuciones revolucionarias en los campos de la fermentación, la vacunación y la esterilización.<br /><br />
+
+Pasteur comenzó su carrera científica estudiando cristalografía y química en la Universidad de Estrasburgo. Luego, se convirtió en profesor de química en la Universidad de Lille, donde realizó experimentos que refutaron la idea de la generación espontánea y demostraron que la vida microscópica se originaba a partir de microorganismos existentes. Esto allanó el camino para su investigación sobre la descomposición de los alimentos y la fermentación.<br /><br />
+
+En 1864, Pasteur hizo un importante descubrimiento al estudiar los procesos de fermentación de los vinos y cervezas. Demostró que los microorganismos eran los responsables de la fermentación, y desarrolló un proceso conocido como pasteurización para controlar el crecimiento de estos microorganismos en alimentos y bebidas. Este método aún se utiliza ampliamente en la industria alimentaria hoy en día.<br /><br />
+
+Además de sus contribuciones en la fermentación, Pasteur también trabajó en el campo de la inmunología. Realizó estudios sobre enfermedades como la rabia, desarrollando una vacuna efectiva contra esta enfermedad mortal. Su vacuna contra la rabia fue un gran avance en la medicina y salvó innumerables vidas.<br /><br />
+
+A lo largo de su carrera, Pasteur recibió numerosos reconocimientos y honores, incluido el nombramiento como director del recién creado Instituto Pasteur en París en 1888. Este instituto se convirtió en un importante centro de investigación médica y microbiológica. <br /><br />
+
+Louis Pasteur fue un científico incansable y apasionado que revolucionó la ciencia y la medicina con sus descubrimientos. Su legado perdura hasta el día de hoy, y su enfoque en la importancia de la higiene y la microbiología sentó las bases para los avances científicos y médicos posteriores.</p>
+
+<h2 id="científico_10">Arquímedes de Siracusa, Italia</h2>
+<a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrSUws_pl98P6NYppRhl2z7WYSLLuRP2pStK4nE2d8G8mGSvQoP2jPRy3N-hJYuaYarljsT9XzUw0--35-lDZLuYZrYuEwYcf5AaR0JE68vCIm8oRhS-qE8KLg4APizqjkS2pQQ7JtcdKQV-f579tuWQ1ST_auNUbCGeoTFEDI2SWRaF-aLeCFF6bQ/s320/Arquimedes_1.jpg"/></a>
+<p>Arquímedes de Siracusa fue un famoso matemático, físico, inventor, ingeniero y astrónomo griego nacido alrededor del año 287 a.C. en la ciudad de Siracusa, en la isla de Sicilia. Es considerado uno de los científicos más destacados de la antigüedad y sus contribuciones revolucionaron varios campos de estudio.<br /><br />
+
+Arquímedes creció en una familia educada y tuvo acceso a una excelente educación en matemáticas y ciencias. Estudió en Alejandría, Egipto, donde se familiarizó con las ideas de otros grandes matemáticos y científicos de la época.<br /><br />
+
+Entre sus logros más conocidos se encuentra el principio de la palanca y el concepto de la gravedad específica. Se dice que exclamó "¡Eureka!" cuando descubrió cómo determinar la densidad de un objeto sumergido en un fluido. Esta anécdota se hizo famosa y muestra la emoción y la pasión que Arquímedes tenía por la ciencia.<br /><br />
+
+Arquímedes también hizo importantes contribuciones a la geometría. Es conocido por su trabajo en el cálculo del área y el volumen de figuras curvas, y su método para calcular el valor aproximado de π (pi). Desarrolló la famosa "corona de Arquímedes" para resolver el problema de determinar si una corona era de oro puro o si tenía alguna parte de plata.<br /><br />
+
+Además de sus contribuciones matemáticas, Arquímedes también se destacó en la física y la ingeniería. Diseñó máquinas de guerra y defensas para la ciudad de Siracusa durante la Segunda Guerra Púnica contra los romanos. Sus inventos incluían catapultas, espejos ardientes para quemar naves enemigas y sistemas de poleas.<br /><br />
+
+A pesar de su genialidad, Arquímedes tuvo una muerte trágica. Durante la conquista de Siracusa por los romanos en el año 212 a.C., fue asesinado por un soldado romano mientras estaba inmerso en un problema matemático. Según los relatos, se dice que Arquímedes le pidió al soldado que no perturbara sus diagramas y ecuaciones, pero esto enfureció al soldado y lo mató.<br /><br />
+
+La vida de Arquímedes de Siracusa dejó un legado duradero en el mundo de la ciencia y las matemáticas. Sus descubrimientos y teorías sentaron las bases para futuros avances en estos campos y su genialidad sigue siendo reconocida y admirada hasta el día de hoy.</p>
+  </main>
+  <footer>
+    
+    <p>Derechos de autor &copy; 2023 | La tecnología en nuestras manos  </p>
+  </footer>
+</body>
+</html>

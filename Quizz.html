@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz de Cultura General</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style type="text/css" media="all">
+    body {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.padre {
+  width: 60%;
+  border: 1px solid #000000;
+  border-radius: 35px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 20px;
+  border: none;
+}
+
+#quiz {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+#quiz p {
+  padding: 20px;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilos personalizados para el botón */
+button {
+  background-color: #4CAF50; /* Color de fondo */
+  color: white; /* Color de texto */
+  padding: 10px 20px; /* Espaciado interno (arriba/abajo - izquierda/derecha) */
+  border: none; /* Borde */
+  border-radius: 5px; /* Radio de borde */
+  cursor: pointer; /* Cursor al pasar el mouse */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilos al pasar el mouse por encima del botón */
+button:hover {
+  background-color: #45a049; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos al presionar el botón */
+button:active {
+  background-color: #3e8e41; /* Color de fondo al presionar */
+}
+
+.bonito {
+  color: #00ffff; /* Cyan */
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.bonito:hover {
+  transform: scale(1.1);
+  color: #ff00ff; /* Magenta */
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.lo  {
+  display: block;
+  margin: 10px auto; /* Agrega margen vertical de 10px */
+}
+
+  </style>
+</head>
+<body>
+  <div class="padre" id="quiz">
+    <h2>Quiz de Cultura General</h2>
+    <p id="question"></p>
+    <input type="radio" id="option1" name="answer" value="1">
+    <label for="option1" id="option1Label"></label><br>
+    <input type="radio" id="option2" name="answer" value="2">
+    <label for="option2" id="option2Label"></label><br>
+    <input type="radio" id="option3" name="answer" value="3">
+    <label for="option3" id="option3Label"></label><br>
+    <button id="submitButton" onclick="checkAnswer()">Siguiente</button>
+
+    <p class="bonito" id="score" style="display: none;">Puntaje: <span id="scoreValue"></span></p>
+    
+    <button class="lo" id="restartButton" onclick="restartQuiz()">Reiniciar</button>
+  </div>
+
+  <script type="text/javascript" charset="utf-8">
+var questions = [
+  {
+    question: "¿Cuál es la capital de Francia?",
+    options: ["a) Roma", "b) Londres", "c) París"],
+    answer: 3
+  },
+  {
+    question: "¿En qué año se descubrió América?",
+    options: ["a) 1492", "b) 1776", "c) 1812"],
+    answer: 1
+  },
+  {
+    question: "¿Qué significa IA?",
+    options: ["a) Agua y Italia", "b) Inteligencia artificial", "c) Inteligencia anónima"],
+    answer: 2
+  },
+  {
+    question: "¿Cuál es el río más largo del mundo?",
+    options: ["a) Río Coco", "b) Río Nilo", "c) Río Amazonas"],
+    answer: 3
+  },
+  {
+    question: "¿Cuál es la capital de Australia?",
+    options: ["a) Canberra", "b) Francia", "c) Varsovia"],
+    answer: 1
+  },
+  {
+    question: "¿Quién escribió 'Cien años de soledad'?",
+    options: ["a) Pablo Antonio Cuadra", "b) Gabriel García Márquez", "c) Miguel Hernández"],
+    answer: 2
+  },
+  {
+    question: "¿Cuál es el océano más grande del mundo?",
+    options: ["a) Océano Atlántico", "b) Océano Índico", "c) Océano Pacífico"],
+    answer: 3
+  },
+  {
+    question: "¿Cuál es la montaña más alta del mundo?",
+    options: ["a) Monte Everest", "b) Monte Kilimanjaro", "c) Monte Aconcagua"],
+    answer: 1
+  },
+  {
+    question: "¿Cuál es la capital de México?",
+    options: ["a) Ciudad de México", "b) Madrid", "c) Bogotá"],
+    answer: 1
+  },
+  {
+    question: "¿Cuál es el país más poblado del mundo?",
+    options: ["a) China", "b) Estados Unidos", "c) India"],
+    answer: 1
+  },
+  {
+    question: "¿Cuál es el animal terrestre más grande del mundo?",
+    options: ["a) Elefante africano", "b) Gorila", "c) Jirafa"],
+    answer: 1
+  },
+  {
+    question: "¿Cuál es la ciudad más poblada de Estados Unidos?",
+    options: ["a) Nueva York", "b) Los Ángeles", "c) Chicago"],
+    answer: 1
+  },
+  {
+    question: "¿Cuál es la moneda oficial de Japón?",
+    options: ["a) Yen", "b) Dólar", "c) Euro"],
+    answer: 1
+  },
+  {
+    question: "¿Cuál es el país más grande del mundo por área?",
+    options: ["a) Rusia", "b) Canadá", "c) China"],
+    answer: 1
+  },
+  {
+    question: "¿En qué año se fundó la empresa Apple?",
+    options: ["a) 1976", "b) 1984", "c) 1991"],
+    answer: 1
+  },
+    {
+    question: "¿Cuál es el elemento químico más abundante en la Tierra?",
+    options: ["a) Oxígeno", "b) Hidrógeno", "c) Carbono"],
+    answer: 1
+  },
+  {
+    question: "¿Cuál es el autor de la novela 'Don Quijote de la Mancha'?",
+    options: ["a) Miguel de Cervantes", "b) Gabriel García Márquez", "c) William Shakespeare"],
+    answer: 1
+  },
+  {
+    question: "¿Cuál es el océano más pequeño del mundo?",
+    options: ["a) Océano Atlántico", "b) Océano Índico", "c) Océano Ártico"],
+    answer: 3
+  },
+  {
+    question: "¿En qué año se celebraron los primeros Juegos Olímpicos modernos?",
+    options: ["a) 1896", "b) 1904", "c) 1920"],
+    answer: 1
+  },
+  {
+    question: "¿Cuál es el metal más ligero que se encuentra en la tabla periódica?",
+    options: ["a) Litio", "b) Aluminio", "c) Titanio"],
+    answer: 1
+  },
+  {
+    question: "¿Es un paso del método cientifico que establece posoble respuesta de un fenómeno que pueden ser verdaderas o falsas?",
+    options: ["a) cálculos", "b) hipótesis", "c) volumen"],
+    answer: 2
+  },
+    {
+    question: "¿Físico Francés que descubrio la radioactividad?",
+    options: ["a) Mendel", "b) Herry Becquerel", "c) Marie Curie"],
+    answer: 2
+  }
+];
+
+// Resto del código
+
+
+
+
+
+var currentQuestion = 0;
+var score = 0;
+var maxScore = questions.length * 10;
+
+function loadQuestion() {
+  var question = questions[currentQuestion];
+  document.getElementById("question").textContent = question.question;
+  document.getElementById("option1Label").textContent = question.options[0];
+  document.getElementById("option2Label").textContent = question.options[1];
+  document.getElementById("option3Label").textContent = question.options[2];
+}
+
+function checkAnswer() {
+  var selectedOption = document.querySelector('input[name="answer"]:checked');
+  if (selectedOption) {
+    if (selectedOption.value == questions[currentQuestion].answer) {
+      score += 10;
+    }
+    currentQuestion++;
+    selectedOption.checked = false;
+    if (currentQuestion < questions.length) {
+      loadQuestion();
+    } else {
+      showScore();
+    }
+  }
+}
+
+function showScore() {
+  // Oculta las preguntas y opciones
+  document.getElementById("question").style.display = "none";
+  document.getElementById("option1").style.display = "none";
+  document.getElementById("option2").style.display = "none";
+  document.getElementById("option3").style.display = "none";
+
+  // Oculta las etiquetas de las opciones
+  document.getElementById("option1Label").style.display = "none";
+  document.getElementById("option2Label").style.display = "none";
+  document.getElementById("option3Label").style.display = "none";
+
+  // Oculta el botón de enviar
+  document.getElementById("submitButton").style.display = "none";
+
+  // Muestra el puntaje y el botón de reinicio
+  document.getElementById("score").style.display = "block";
+  document.getElementById("scoreValue").textContent = score + "/" + maxScore;
+  document.getElementById("restartButton").style.display = "block";
+}
+
+function restartQuiz() {
+  currentQuestion = 0; // Reinicia el índice de la pregunta
+  score = 0; // Reinicia el puntaje
+
+  // Muestra las preguntas y opciones
+  document.getElementById("question").style.display = "block";
+  document.getElementById("option1").style.display = "block";
+  document.getElementById("option2").style.display = "block";
+  document.getElementById("option3").style.display = "block";
+
+  // Muestra las etiquetas de las opciones
+  document.getElementById("option1Label").style.display = "block";
+  document.getElementById("option2Label").style.display = "block";
+  document.getElementById("option3Label").style.display = "block";
+
+  // Muestra el botón de enviar
+  document.getElementById("submitButton").style.display = "block";
+
+  // Oculta el puntaje y el botón de reinicio
+  document.getElementById("score").style.display = "none";
+  document.getElementById("restartButton").style.display = "none";
+
+  loadQuestion();
+}
+
+loadQuestion();
+
+  </script>
+</body>
+</html>

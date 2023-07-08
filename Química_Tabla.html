@@ -1,0 +1,768 @@
+<html>
+<head><!DOCTYPE
+	<meta charset="utf-8">
+	<title>Tabla periódica de los elementos</title>
+	<style>
+		body {
+			background-color: #EEE;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			color: #0066CC;
+			text-align: center;
+		}
+		table {
+			border-collapse: collapse;
+			margin: 0 auto;
+		}
+		td, th {
+			padding: 3px;
+			border: 1px solid #CCC;
+			text-align: center;
+		}
+		th {
+			background-color: #0066CC;
+			color: #FFF;
+		}
+		.elemento {
+			background-color: #FFF;
+			cursor: pointer;
+			transition: background-color 0.2s;
+		}
+		.elemento:hover {
+			background-color: #DDD;
+		}
+		.simbolo {
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.nombre {
+			font-size: 14px;
+		}
+		.numero {
+			color: #666;
+			font-size: 10px;
+			padding: 5px;
+			background-color: #DDD;
+			border-radius: 5px;
+			margin-right: 5px;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<h1>Tabla de los elementos</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Número atómico</th>
+				<th>Nombre</th>
+				<th>Símbolo</th>
+				<th>Masa atómica</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Hidrógeno</td>
+				<td class="elemento"><span class="numero">1</span><span class="simbolo">H</span><span class="nombre"></span></td>
+				<td>1.00794</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Helio</td>
+				<td class="elemento"><span class="numero">2</span><span class="simbolo">He</span><span class="nombre"></span></td>
+				<td>4.0026</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Litio</td>
+				<td class="elemento"><span class="numero">3</span><span class="simbolo">Li</span><span class="nombre"></span></td>
+				<td>6.941</td>
+			</tr>
+	<tr>
+				<td>4</td>
+				<td>Berilio</td>
+				<td class="elemento"><span class="numero">4</span><span class="simbolo">Be</span><span class="nombre"></span></td>
+				<td>9.0122</td>
+			</tr>	<tr>
+				<td>5</td>
+				<td>Boro</td>
+				<td class="elemento"><span class="numero">5</span><span class="simbolo">B</span><span class="nombre"></span></td>
+				<td>10.811</td>
+			</tr>	<tr>
+				<td>6</td>
+				<td>Carbono</td>
+				<td class="elemento"><span class="numero">6</span><span class="simbolo">C</span><span class="nombre"></span></td>
+				<td>12.01115</td>
+			</tr>	<tr>
+				<td>7</td>
+				<td>Nitrógeno</td>
+				<td class="elemento"><span class="numero">7</span><span class="simbolo">N</span><span class="nombre"></span></td>
+				<td>10.0067</td>
+			</tr>	<tr>
+				<td>8</td>
+				<td>Oxigeno</td>
+				<td class="elemento"><span class="numero">8</span><span class="simbolo">O</span><span class="nombre"></span></td>
+				<td>15.9994</td>
+			</tr>	<tr>
+				<td>9</td>
+				<td>Flour</td>
+				<td class="elemento"><span class="numero">9</span><span class="simbolo">F</span><span class="nombre"></span></td>
+				<td>18.9984</td>
+			</tr>	<tr>
+				<td>10</td>
+				<td>Neon</td>
+				<td class="elemento"><span class="numero">10</span><span class="simbolo">Ne</span><span class="nombre"></span></td>
+				<td>20.1797</td>
+			</tr>	<tr>
+				<td>11</td>
+				<td>Sodio</td>
+				<td class="elemento"><span class="numero">11</span><span class="simbolo">Na</span><span class="nombre"></span></td>
+				<td>22.9898</td>
+			</tr>	<tr>
+				<td>12</td>
+				<td>Magnesio</td>
+				<td class="elemento"><span class="numero">12</span><span class="simbolo">Mg</span><span class="nombre"></span></td>
+				<td>24.305</td>
+			</tr>	<tr>
+				<td>13</td>
+				<td>Aluminio</td>
+				<td class="elemento"><span class="numero">13</span><span class="simbolo">Al</span><span class="nombre"></span></td>
+				<td>26.98154</td>
+			</tr>	<tr>
+				<td>14</td>
+				<td>Silicio</td>
+				<td class="elemento"><span class="numero">14</span><span class="simbolo">Si</span><span class="nombre"></span></td>
+				<td>28.0855</td>
+			</tr>	<tr>
+				<td>15</td>
+				<td>Fósforo</td>
+				<td class="elemento"><span class="numero">15</span><span class="simbolo">P</span><span class="nombre"></span></td>
+				<td>30.97376</td>
+			</tr>	<tr>
+				<td>16</td>
+				<td>Asufre</td>
+				<td class="elemento"><span class="numero">16</span><span class="simbolo">S</span><span class="nombre"></span></td>
+				<td>32.066</td>
+			</tr>	<tr>
+				<td>17</td>
+				<td>Cloro</td>
+				<td class="elemento"><span class="numero">17</span><span class="simbolo">Cl</span><span class="nombre"></span></td>
+				<td>35.4527</td>
+			</tr>	<tr>
+				<td>18</td>
+				<td>Argon</td>
+				<td class="elemento"><span class="numero">18</span><span class="simbolo">Ar</span><span class="nombre"></span></td>
+				<td>39.948</td>
+			</tr>	<tr>
+				<td>19</td>
+				<td>Potasio</td>
+				<td class="elemento"><span class="numero">19</span><span class="simbolo">K</span><span class="nombre"></span></td>
+				<td>39.098</td>
+			</tr>	<tr>
+				<td>20</td>
+				<td>Calcio</td>
+				<td class="elemento"><span class="numero">20</span><span class="simbolo">Ca</span><span class="nombre"></span></td>
+				<td>40.08</td>
+			</tr>
+			<tr>
+				<td>21</td>
+				<td>Escandio</td>
+				<td class="elemento"><span class="numero">21</span><span class="simbolo">Sc</span><span class="nombre"></span></td>
+				<td>44.956</td>
+			</tr>
+				<tr>
+				<td>22</td>
+				<td>Titanio</td>
+				<td class="elemento"><span class="numero">22</span><span class="simbolo">Ti</span><span class="nombre"></span></td>
+				<td>47.88</td>
+			</tr>
+     	<tr>
+				<td>23</td>
+				<td>Vanadio</td>
+				<td class="elemento"><span class="numero">23</span><span class="simbolo">V</span><span class="nombre"></span></td>
+				<td>50.942</td>
+			</tr>
+      <tr>
+				<td>24</td>
+				<td>Cromo</td>
+				<td class="elemento"><span class="numero">24</span><span class="simbolo">Cr</span><span class="nombre"></span></td>
+				<td>51.996</td>
+			</tr>
+     <tr>
+				<td>25</td>
+				<td>Manganeso</td>
+				<td class="elemento"><span class="numero">25</span><span class="simbolo">Mn</span><span class="nombre"></span></td>
+				<td>54.938</td>
+			</tr>
+     <tr>
+				<td>26</td>
+				<td>Hierro</td>
+				<td class="elemento"><span class="numero">26</span><span class="simbolo">Fe</span><span class="nombre"></span></td>
+				<td>55.847</td>
+			</tr>
+     <tr>
+				<td>27</td>
+				<td>Cobalto</td>
+				<td class="elemento"><span class="numero">27</span><span class="simbolo">Co</span><span class="nombre"></span></td>
+				<td>58.9332</td>
+			</tr>
+     <tr>
+				<td>28</td>
+				<td>Niquel</td>
+				<td class="elemento"><span class="numero">28</span><span class="simbolo">Ni</span><span class="nombre"></span></td>
+				<td>58.6934</td>
+			</tr>
+     <tr>
+				<td>29</td>
+				<td>Cobre</td>
+				<td class="elemento"><span class="numero">29</span><span class="simbolo">Cu</span><span class="nombre"></span></td>
+				<td>63.546</td>
+			</tr>
+     <tr>
+				<td>30</td>
+				<td>Zinc</td>
+				<td class="elemento"><span class="numero">30</span><span class="simbolo">Zn</span><span class="nombre"></span></td>
+				<td>63.38</td>
+			</tr>
+     <tr>
+				<td>31</td>
+				<td>Galio</td>
+				<td class="elemento"><span class="numero">31</span><span class="simbolo">Ga</span><span class="nombre"></span></td>
+				<td>69.723</td>
+			</tr>
+     <tr>
+				<td>32</td>
+				<td>Germanio</td>
+				<td class="elemento"><span class="numero">32</span><span class="simbolo">Ge</span><span class="nombre"></span></td>
+				<td>72.59</td>
+			</tr>
+     <tr>
+				<td>33</td>
+				<td>Arsénico</td>
+				<td class="elemento"><span class="numero">33</span><span class="simbolo">As</span><span class="nombre"></span></td>
+				<td>74.9216</td>
+			</tr>
+      <tr>
+				<td>34</td>
+				<td>Selenio</td>
+				<td class="elemento"><span class="numero">34</span><span class="simbolo">Se</span><span class="nombre"></span></td>
+				<td>78.96</td>
+			</tr>
+     <tr>
+				<td>35</td>
+				<td>Bromo</td>
+				<td class="elemento"><span class="numero">35</span><span class="simbolo">Br</span><span class="nombre"></span></td>
+				<td>79.904</td>
+			</tr>
+			
+     <tr>
+				<td>36</td>
+				<td>Criptón</td>
+				<td class="elemento"><span class="numero">36</span><span class="simbolo">Kr</span><span class="nombre"></span></td>
+				<td>83.80</td>
+			</tr>
+     <tr>
+				<td>37</td>
+				<td>Rubidio</td>
+				<td class="elemento"><span class="numero">37</span><span class="simbolo">Rb</span><span class="nombre"></span></td>
+				<td>85.47</td>
+			</tr>
+     <tr>
+				<td>38</td>
+				<td>Estroncio</td>
+				<td class="elemento"><span class="numero">38</span><span class="simbolo">Sr</span><span class="nombre"></span></td>
+				<td>87.62</td>
+			</tr>
+     <tr>
+				<td>39</td>
+				<td>Itrio</td>
+				<td class="elemento"><span class="numero">39</span><span class="simbolo">Y</span><span class="nombre"></span></td>
+				<td>88.906</td>
+			</tr>
+     <tr>
+				<td>40</td>
+				<td>Zirconio</td>
+				<td class="elemento"><span class="numero">40</span><span class="simbolo">Zr</span><span class="nombre"></span></td>
+				<td>91.22</td>
+			</tr>
+    <tr>
+				<td>41</td>
+				<td>Niobio</td>
+				<td class="elemento"><span class="numero">41</span><span class="simbolo">Nb</span><span class="nombre"></span></td>
+				<td>92.9064</td>
+			</tr>
+    <tr>
+				<td>42</td>
+				<td>Molibdeno</td>
+				<td class="elemento"><span class="numero">42</span><span class="simbolo">Mo</span><span class="nombre"></span></td>
+				<td>95.94</td>
+			</tr>
+    <tr>
+				<td>43</td>
+				<td>Tecnecio</td>
+				<td class="elemento"><span class="numero">43</span><span class="simbolo">Tc</span><span class="nombre"></span></td>
+				<td>(98)</td>
+			</tr>
+    <tr>
+				<td>44</td>
+				<td>Rutenio</td>
+				<td class="elemento"><span class="numero">44</span><span class="simbolo">Ru</span><span class="nombre"></span></td>
+				<td>101.07</td>
+			</tr>
+    <tr>
+				<td>45</td>
+				<td>Rodio</td>
+				<td class="elemento"><span class="numero">45</span><span class="simbolo">Rh</span><span class="nombre"></span></td>
+				<td>102.9055</td>
+			</tr>
+    <tr>
+				<td>46</td>
+				<td>Paladio</td>
+				<td class="elemento"><span class="numero">46</span><span class="simbolo">Pd</span><span class="nombre"></span></td>
+				<td>106.42</td>
+			</tr>
+    <tr>
+				<td>47</td>
+				<td>Plata</td>
+				<td class="elemento"><span class="numero">47</span><span class="simbolo">Ag</span><span class="nombre"></span></td>
+				<td>107.868</td>
+			</tr>
+    <tr>
+				<td>48</td>
+				<td>Cadmio</td>
+				<td class="elemento"><span class="numero">48</span><span class="simbolo">Cd</span><span class="nombre"></span></td>
+				<td>112.41</td>
+			</tr>
+    <tr>
+				<td>49</td>
+				<td>Indio</td>
+				<td class="elemento"><span class="numero">49</span><span class="simbolo">In</span><span class="nombre"></span></td>
+				<td>114.82</td>
+			</tr>
+    <tr>
+				<td>50</td>
+				<td>Estaño</td>
+				<td class="elemento"><span class="numero">50</span><span class="simbolo">Sn</span><span class="nombre"></span></td>
+				<td>118.71</td>
+			</tr>
+			    <tr>
+				<td>51</td>
+				<td>Antimonio</td>
+				<td class="elemento"><span class="numero">51</span><span class="simbolo">Sb</span><span class="nombre"></span></td>
+				<td>121.757</td>
+			</tr>
+    <tr>
+				<td>52</td>
+				<td>Teluro</td>
+				<td class="elemento"><span class="numero">52</span><span class="simbolo">Te</span><span class="nombre"></span></td>
+				<td>127.6</td>
+			</tr>
+    <tr>
+				<td>53</td>
+				<td>Yodo</td>
+				<td class="elemento"><span class="numero">53</span><span class="simbolo">I</span><span class="nombre"></span></td>
+				<td>126.9045</td>
+			</tr>
+    <tr>
+				<td>54</td>
+				<td>Xenón</td>
+				<td class="elemento"><span class="numero">54</span><span class="simbolo">Xe</span><span class="nombre"></span></td>
+				<td>131.30</td>
+			</tr>
+    <tr>
+				<td>55</td>
+				<td>Cesio</td>
+				<td class="elemento"><span class="numero">55</span><span class="simbolo">Cs</span><span class="nombre"></span></td>
+				<td>132.905</td>
+			</tr>
+    <tr>
+				<td>56</td>
+				<td>Bario</td>
+				<td class="elemento"><span class="numero">56</span><span class="simbolo">Ba</span><span class="nombre"></span></td>
+				<td>137.33</td>
+			</tr>
+    <tr>
+				<td>57</td>
+				<td>Lantano</td>
+				<td class="elemento"><span class="numero">57</span><span class="simbolo">La</span><span class="nombre"></span></td>
+				<td>138.91</td>
+			</tr>
+    <tr>
+				<td>58</td>
+				<td>Cerio</td>
+				<td class="elemento"><span class="numero">58</span><span class="simbolo">Ce</span><span class="nombre"></span></td>
+				<td>140.12</td>
+			</tr>
+    <tr>
+				<td>59</td>
+				<td>Praseodimio</td>
+				<td class="elemento"><span class="numero">59</span><span class="simbolo">Pr</span><span class="nombre"></span></td>
+				<td>140.907</td>
+			</tr>
+			
+    <tr>
+				<td>60</td>
+				<td>Neodimio</td>
+				<td class="elemento"><span class="numero">60</span><span class="simbolo">Nd</span><span class="nombre"></span></td>
+				<td>144.24</td>
+			</tr>
+    <tr>
+				<td>61</td>
+				<td>Prometio</td>
+				<td class="elemento"><span class="numero">61</span><span class="simbolo">Pm</span><span class="nombre"></span></td>
+				<td>(147)</td>
+			</tr>
+			
+    <tr>
+				<td>62</td>
+				<td>Samario</td>
+				<td class="elemento"><span class="numero">62</span><span class="simbolo">Sm</span><span class="nombre"></span></td>
+				<td>150.35</td>
+			</tr>
+    <tr>
+				<td>63</td>
+				<td>Europio</td>
+				<td class="elemento"><span class="numero">63</span><span class="simbolo">Eu</span><span class="nombre"></span></td>
+				<td>151.96</td>
+			</tr>
+    <tr>
+				<td>64</td>
+				<td>Gadolinio</td>
+				<td class="elemento"><span class="numero">64</span><span class="simbolo">Gd</span><span class="nombre"></span></td>
+				<td>157.25</td>
+			</tr>
+    <tr>
+				<td>65</td>
+				<td>Terbio</td>
+				<td class="elemento"><span class="numero">65</span><span class="simbolo">Tb</span><span class="nombre"></span></td>
+				<td>158.924</td>
+			</tr>
+    <tr>
+				<td>66</td>
+				<td>Disprosio</td>
+				<td class="elemento"><span class="numero">66</span><span class="simbolo">Dy</span><span class="nombre"></span></td>
+				<td>162.50</td>
+			</tr>
+    <tr>
+				<td>67</td>
+				<td>Holmio</td>
+				<td class="elemento"><span class="numero">67</span><span class="simbolo">Ho</span><span class="nombre"></span></td>
+				<td>164.930</td>
+			</tr>
+    <tr>
+				<td>68</td>
+				<td>Erbio</td>
+				<td class="elemento"><span class="numero">68</span><span class="simbolo">Er</span><span class="nombre"></span></td>
+				<td>167.26</td>
+			</tr>
+    <tr>
+				<td>69</td>
+				<td>Tulio</td>
+				<td class="elemento"><span class="numero">69</span><span class="simbolo">Tm</span><span class="nombre"></span></td>
+				<td>168.934</td>
+			</tr>
+    <tr>
+				<td>70</td>
+				<td>Yterbio</td>
+				<td class="elemento"><span class="numero">70</span><span class="simbolo">Yb</span><span class="nombre"></span></td>
+				<td>173.04</td>
+			</tr>
+    <tr>
+				<td>71</td>
+				<td>Lutecio</td>
+				<td class="elemento"><span class="numero">71</span><span class="simbolo">Lu</span><span class="nombre"></span></td>
+				<td>174.97</td>
+			</tr>
+    <tr>
+				<td>72</td>
+				<td>Hafnio</td>
+				<td class="elemento"><span class="numero">72</span><span class="simbolo">Hf</span><span class="nombre"></span></td>
+				<td>178.49</td>
+			</tr>
+    <tr>
+				<td>73</td>
+				<td>Tantalo</td>
+				<td class="elemento"><span class="numero">73</span><span class="simbolo">Ta</span><span class="nombre"></span></td>
+				<td>180.948</td>
+			</tr>
+    <tr>
+				<td>74</td>
+				<td>Wolframio</td>
+				<td class="elemento"><span class="numero">74</span><span class="simbolo">W</span><span class="nombre"></span></td>
+				<td>183.85</td>
+			</tr>
+    <tr>
+				<td>75</td>
+				<td>Renio</td>
+				<td class="elemento"><span class="numero">75</span><span class="simbolo">Re</span><span class="nombre"></span></td>
+				<td>186.21</td>
+			</tr>
+    <tr>
+				<td>76</td>
+				<td>Osmio</td>
+				<td class="elemento"><span class="numero">76</span><span class="simbolo">Os</span><span class="nombre"></span></td>
+				<td>190.2</td>
+			</tr>
+    <tr>
+				<td>77</td>
+				<td>Iridio</td>
+				<td class="elemento"><span class="numero">77</span><span class="simbolo">Ir</span><span class="nombre"></span></td>
+				<td>192.22</td>
+			</tr>
+    <tr>
+				<td>78</td>
+				<td>Platino</td>
+				<td class="elemento"><span class="numero">78</span><span class="simbolo">Pt</span><span class="nombre"></span></td>
+				<td>195.08</td>
+			</tr>
+    <tr>
+				<td>79</td>
+				<td>Oro</td>
+				<td class="elemento"><span class="numero">79</span><span class="simbolo">Au</span><span class="nombre"></span></td>
+				<td>196.9665</td>
+			</tr>
+			
+    <tr>
+				<td>80</td>
+				<td>Mercurio</td>
+				<td class="elemento"><span class="numero">80</span><span class="simbolo">Hg</span><span class="nombre"></span></td>
+				<td>200.59</td>
+			</tr>
+    <tr>
+				<td>81</td>
+				<td>Talio</td>
+				<td class="elemento"><span class="numero">81</span><span class="simbolo">Tl</span><span class="nombre"></span></td>
+				<td>204.383</td>
+			</tr>
+    <tr>
+				<td>82</td>
+				<td>Plomo</td>
+				<td class="elemento"><span class="numero">82</span><span class="simbolo">Pb</span><span class="nombre"></span></td>
+				<td>207.19</td>
+			</tr>
+    <tr>
+				<td>83</td>
+				<td>Bismuto</td>
+				<td class="elemento"><span class="numero">83</span><span class="simbolo">Bi</span><span class="nombre"></span></td>
+				<td>208.9804</td>
+			</tr>
+    <tr>
+				<td>84</td>
+				<td>Polonio</td>
+				<td class="elemento"><span class="numero">84</span><span class="simbolo">Po</span><span class="nombre"></span></td>
+				<td>(209)</td>
+			</tr>
+    <tr>
+				<td>85</td>
+				<td>Astato</td>
+				<td class="elemento"><span class="numero">85</span><span class="simbolo">At</span><span class="nombre"></span></td>
+				<td>(210)</td>
+			</tr>
+    <tr>
+				<td>86</td>
+				<td>Radon</td>
+				<td class="elemento"><span class="numero">86</span><span class="simbolo">Rn</span><span class="nombre"></span></td>
+				<td>(222)</td>
+			</tr>
+    <tr>
+				<td>87</td>
+				<td>Francio</td>
+				<td class="elemento"><span class="numero">87</span><span class="simbolo">Fr</span><span class="nombre"></span></td>
+				<td>223.0197</td>
+			</tr>
+    <tr>
+				<td>88</td>
+				<td>Radio</td>
+				<td class="elemento"><span class="numero">88</span><span class="simbolo">Ra</span><span class="nombre"></span></td>
+				<td>226.0254</td>
+			</tr>
+    <tr>
+				<td>89</td>
+				<td>Actinio</td>
+				<td class="elemento"><span class="numero">89</span><span class="simbolo">Ac</span><span class="nombre"></span></td>
+				<td>(227)</td>
+			</tr>
+    <tr>
+				<td>90</td>
+				<td>Torio</td>
+				<td class="elemento"><span class="numero">90</span><span class="simbolo">Th</span><span class="nombre"></span></td>
+				<td>232.038</td>
+			</tr>
+    <tr>
+				<td>91</td>
+				<td>Protactinio</td>
+				<td class="elemento"><span class="numero">91</span><span class="simbolo"></span><span class="nombre"></span></td>
+				<td>(231)</td>
+			</tr>
+			
+    <tr>
+				<td>92</td>
+				<td>Uranio</td>
+				<td class="elemento"><span class="numero">92</span><span class="simbolo">U</span><span class="nombre"></span></td>
+				<td>238.03</td>
+			</tr>
+    <tr>
+				<td>93</td>
+				<td>Neptunio</td>
+				<td class="elemento"><span class="numero">93</span><span class="simbolo">Np</span><span class="nombre"></span></td>
+				<td>(237)</td>
+			</tr>
+    <tr>
+				<td>94</td>
+				<td>Plutonio</td>
+				<td class="elemento"><span class="numero">94</span><span class="simbolo">Pu</span><span class="nombre"></span></td>
+				<td>(244)</td>
+			</tr>
+    <tr>
+				<td>95</td>
+				<td>Americio</td>
+				<td class="elemento"><span class="numero">95</span><span class="simbolo">Am</span><span class="nombre"></span></td>
+				<td>(243)</td>
+			</tr>
+    <tr>
+				<td>96</td>
+				<td>Curio</td>
+				<td class="elemento"><span class="numero">96</span><span class="simbolo">Cm</span><span class="nombre"></span></td>
+				<td>(247)</td>
+			</tr>
+    <tr>
+				<td>97</td>
+				<td>Berkelio</td>
+				<td class="elemento"><span class="numero">97</span><span class="simbolo">Bk</span><span class="nombre"></span></td>
+				<td>(247)</td>
+			</tr>
+    <tr>
+				<td>98</td>
+				<td>Californio</td>
+				<td class="elemento"><span class="numero">98</span><span class="simbolo">Cf</span><span class="nombre"></span></td>
+				<td>(251)</td>
+			</tr>
+    <tr>
+				<td>99</td>
+				<td>Einsteinio</td>
+				<td class="elemento"><span class="numero">99</span><span class="simbolo">Es</span><span class="nombre"></span></td>
+				<td>(252)</td>
+			</tr>
+    <tr>
+				<td>100</td>
+				<td>Fermio</td>
+				<td class="elemento"><span class="numero">100</span><span class="simbolo">Fm</span><span class="nombre"></span></td>
+				<td>(257)</td>
+			</tr>
+    <tr>
+				<td>101</td>
+				<td>Mendelevio</td>
+				<td class="elemento"><span class="numero">101</span><span class="simbolo">Md</span><span class="nombre"></span></td>
+				<td>258</td>
+			</tr>
+    <tr>
+				<td>102</td>
+				<td>Nobelio</td>
+				<td class="elemento"><span class="numero">102</span><span class="simbolo">No</span><span class="nombre"></span></td>
+				<td>(259)</td>
+			</tr>
+    <tr>
+				<td>103</td>
+				<td>Laurencio</td>
+				<td class="elemento"><span class="numero">103</span><span class="simbolo">Lr</span><span class="nombre"></span></td>
+				<td>(262)</td>
+			</tr>
+    <tr>
+				<td>104</td>
+				<td>Rutherfordio</td>
+				<td class="elemento"><span class="numero">104</span><span class="simbolo">Rf</span><span class="nombre"></span></td>
+				<td>(267)</td>
+			</tr>
+    <tr>
+				<td>105</td>
+				<td>Dubnio</td>
+				<td class="elemento"><span class="numero">105</span><span class="simbolo">Db</span><span class="nombre"></span></td>
+				<td>(268)</td>
+			</tr>
+    <tr>
+				<td>106</td>
+				<td>Seaborgio</td>
+				<td class="elemento"><span class="numero">106</span><span class="simbolo">Sg</span><span class="nombre"></span></td>
+				<td>(269)</td>
+			</tr>
+    <tr>
+				<td>107</td>
+				<td>Bohrio</td>
+				<td class="elemento"><span class="numero">107</span><span class="simbolo">Bh</span><span class="nombre"></span></td>
+				<td>(270)</td>
+			</tr>
+    <tr>
+				<td>108</td>
+				<td>Hassio</td>
+				<td class="elemento"><span class="numero">108</span><span class="simbolo">Hs</span><span class="nombre"></span></td>
+				<td>(269)</td>
+			</tr>
+    <tr>
+				<td>109</td>
+				<td>Meitnerio</td>
+				<td class="elemento"><span class="numero">109</span><span class="simbolo">Mt</span><span class="nombre"></span></td>
+				<td>(278)</td>
+			</tr>
+    <tr>
+				<td>110</td>
+				<td>Darmstadtio</td>
+				<td class="elemento"><span class="numero">110</span><span class="simbolo">Ds</span><span class="nombre"></span></td>
+				<td>(281)</td>
+			</tr>
+    <tr>
+    <tr>
+				<td>111</td>
+				<td>Roentgenio</td>
+				<td class="elemento"><span class="numero">111</span><span class="simbolo">Rg</span><span class="nombre"></span></td>
+				<td>(280)</td>
+			</tr>
+				<td>112</td>
+				<td>Copernicio</td>
+				<td class="elemento"><span class="numero">112</span><span class="simbolo">Cn</span><span class="nombre"></span></td>
+				<td>(285)</td>
+			</tr>
+    <tr>
+				<td>113</td>
+				<td>Nihonio</td>
+				<td class="elemento"><span class="numero">113</span><span class="simbolo">Nh</span><span class="nombre"></span></td>
+				<td>(284)</td>
+			</tr>
+    <tr>
+				<td>114</td>
+				<td>Flerobio</td>
+				<td class="elemento"><span class="numero">114</span><span class="simbolo">Fl</span><span class="nombre"></span></td>
+				<td>(289)</td>
+			</tr>
+    <tr>
+				<td>115</td>
+				<td>Moscovio</td>
+				<td class="elemento"><span class="numero">115</span><span class="simbolo">Mc</span><span class="nombre"></span></td>
+				<td>(289)</td>
+			</tr>
+    <tr>
+				<td>116</td>
+				<td>Livermorio</td>
+				<td class="elemento"><span class="numero">116</span><span class="simbolo">Lv</span><span class="nombre"></span></td>
+				<td>(293)</td>
+			</tr>
+    <tr>
+				<td>117</td>
+				<td>Tenesino</td>
+				<td class="elemento"><span class="numero">117</span><span class="simbolo">Ts</span><span class="nombre"></span></td>
+				<td>(294)</td>
+			</tr>
+    <tr>
+				<td>118</td>
+				<td>Oganeson</td>
+				<td class="elemento"><span class="numero">118</span><span class="simbolo">Og</span><span class="nombre"></span></td>
+				<td></td>
+			</tr>
+			
+   
+			<!-- Aquí falta el resto de los elementos  Estos son los elementos completos si los científicos agregan alguno demas tu podras seguir.-->
+<br /><br />
+</body>
+</html>
